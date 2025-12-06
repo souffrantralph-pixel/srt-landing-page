@@ -3,73 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Souffrant Readiness Tactical (SRT) - Advanced Firearms Training Facility</title>
+    <title>Souffrant Readiness Tactical (SRT) | Premier Firearms Training</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
             --navy: #122588;
-            --deep-grey: #333333;
+            --gunmetal: #2B2D42;
             --copper: #D4AF37;
             --sand: #C2B280;
-            --gun-metal: #2B2D42;
+            --charcoal: #333333;
         }
         .bg-navy { background-color: var(--navy); }
-        .bg-deep-grey { background-color: var(--deep-grey); }
+        .bg-gunmetal { background-color: var(--gunmetal); }
         .bg-copper { background-color: var(--copper); }
         .bg-sand { background-color: var(--sand); }
-        .bg-gun-metal { background-color: var(--gun-metal); }
-        .text-navy { color: var(--navy); }
         .text-copper { color: var(--copper); }
         html { scroll-behavior: smooth; }
-        .hero-overlay { background: linear-gradient(to bottom, rgba(18, 37, 136, 0.7), rgba(43, 45, 66, 0.7)); }
+        .hero { background: linear-gradient(rgba(18,37,136,0.80), rgba(43,45,66,0.85)), url('https://images.unsplash.com/photo-1582213782174-e1c29f9b9e18?auto=format&fit=crop&q=80') center/cover no-repeat; }
     </style>
 </head>
-<body class="font-sans text-deep-grey bg-white">
+<body class="font-sans text-gray-800 antialiased">
 
     <!-- Navigation -->
-    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-deep-grey/10">
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <h1 class="text-2xl font-bold text-navy">SRT</h1>
+                    <h1 class="text-3xl font-bold text-navy">SRT</h1>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-deep-grey hover:text-navy transition">Home</a>
-                    <a href="#about" class="text-deep-grey hover:text-navy transition">About</a>
-                    <a href="#features" class="text-deep-grey hover:text-navy transition">Training</a>
-                    <a href="#community" class="text-deep-grey hover:text-navy transition">Community</a>
-                    <a href="#contact" class="text-deep-grey hover:text-navy transition">Contact</a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="#signup" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-deep-grey transition">Sign Up</a>
+                    <a href="#home" class="hover:text-navy transition">Home</a>
+                    <a href="#ranges" class="hover:text-navy transition">The Ranges</a>
+                    <a href="#classes" class="hover:text-navy transition">Classes & Training</a>
+                    <a href="#membership" class="hover:text-navy transition">Membership</a>
+                    <a href="#signup" class="bg-navy text-white px-4 py-2 rounded hover:bg-gunmetal transition">Sign Up</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen bg-cover bg-center flex items-center justify-center relative" style="background-image: url('https://images.unsplash.com/photo-1511895350291-e9b8e83b9e93?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
-        <div class="absolute inset-0 hero-overlay"></div>
-        <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+    <!-- Hero -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center text-center text-white">
+        <div class="px-6">
             <h1 class="text-5xl md:text-7xl font-bold mb-6">Souffrant Readiness Tactical</h1>
-            <p class="text-xl md:text-2xl mb-8">Advanced Firearms Training for the Modern Marksman</p>
-            <p class="text-lg mb-12 opacity-90">Build skills, foster community, and train like a pro in a welcoming, professional environment.</p>
-            <a href="#signup" class="bg-copper text-gun-metal px-8 py-4 rounded-lg text-lg font-semibold hover:bg-sand transition inline-flex items-center">
-                Start Your Journey <i class="fas fa-arrow-right ml-2"></i>
+            <p class="text-2xl md:text-3xl mb-8">Train Like a Pro. Belong to a Community.</p>
+            <a href="#signup" class="bg-copper text-gunmetal px-10 py-4 text-xl font-bold rounded-lg hover:bg-sand transition inline-flex items-center">
+                Join SRT Today <i class="fas fa-arrow-right ml-3"></i>
             </a>
         </div>
     </section>
 
-    <!-- (All the other sections from my earlier message go here – About, Features, Community, Signup, Footer) -->
-    <!-- I’ll spare the full 600+ lines here so the message stays readable, but paste the COMPLETE code from my first big response -->
+    <!-- THE RANGES -->
+    <section id="ranges" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-navy mb-16">The Ranges</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581092580490-4a0d4e0e38e1?auto=format&fit=crop&q=80" alt="25-Yard Indoor Range" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy">25-Yard Indoor Range</h3>
+                        <p class="mt-3 text-gray-600">Climate-controlled, 12 lanes, fully automated targets, HEPA filtration.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581092160609-7d0d2f21e2ab?auto=format&fit=crop&q=80" alt="50-Yard Rifle Bay" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy">50-Yard Rifle Bay</h3>
+                        <p class="mt-3 text-gray-600">Precision rifle training up to 50 yards with advanced target systems.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1570549519368-2f5a5fcdb8e8?auto=format&fit=crop&q=80" alt="Tactical Shoot House" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy">Tactical Shoot House</h3>
+                        <p class="mt-3 text-gray-600">Real-world CQB scenarios, movable walls, low-light capable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLASSES & TRAINING -->
+    <section id="classes" class="py-20 bg-gunmetal text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Classes & Training</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-shield-alt text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Concealed Carry Fundamentals</h3>
+                    <p>8-hour course + live-fire qualification</p>
+                </div>
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-bullseye text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Defensive Pistol 1 & 2</h3>
+                    <p>Draw, movement, malfunction clearing</p>
+                </div>
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-crosshairs text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Precision Rifle Series</h3>
+                    <p>Long-range fundamentals & competition prep</p>
+                </div>
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-skull-crossbones text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Low-Light / No-Light</h3>
+                    <p>Weapon-mounted lights & night-vision</p>
+                </div>
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-user-shield text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Women-Only Courses</h3>
+                    <p>Safe, supportive environment with female RSOs</p>
+                </div>
+                <div class="bg-navy/30 backdrop-blur p-8 rounded-xl">
+                    <i class="fas fa-users-cog text-5xl text-copper mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-3">Private & Group Training</h3>
+                    <p>Custom packages available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEMBERSHIP -->
+    <section id="membership" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-navy mb-12">Membership Plans</h2>
+            <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+                <!-- Individual -->
+                <div class="border-4 border-navy rounded-xl p-10 hover:shadow-2xl transition">
+                    <h3 class="text-3xl font-bold text-navy mb-6">Individual</h3>
+                    <p class="text-5xl font-bold text-copper mb-6">$79<span class="text-2xl text-gray-600">/mo</span></p>
+                    <ul class="text-left space-y-4 mb-8">
+                        <li>Unlimited range time</li>
+                        <li>Free guest passes (2/mo)</li>
+                        <li>10% off classes & ammo</li>
+                        <li>Priority lane reservation</li>
+                    </ul>
+                    <a href="#signup" class="block bg-navy text-white py-3 rounded-lg hover:bg-gunmetal transition">Join Now</a>
+                </div>
+
+                <!-- Family (Most Popular) -->
+                <div class="border-4 border-copper rounded-xl p-10 transform scale-105 shadow-2xl">
+                    <div class="bg-copper text-gunmetal px-4 py-1 rounded-full inline-block mb-4">MOST POPULAR</div>
+                    <h3 class="text-3xl font-bold text-navy mb-6">Family</h3>
+                    <p class="text-5xl font-bold text-copper mb-6">$129<span class="text-2xl text-gray-600">/mo</span></p>
+                    <ul class="text-left space-y-4 mb-8">
+                        <li>Up to 4 family members</li>
+                        <li>Unlimited range time</li>
+                        <li>Free guest passes (6/mo)</li>
+                        <li>15% off classes & retail</li>
+                        <li>Free firearm rentals</li>
+                    </ul>
+                    <a href="#signup" class="block bg-copper text-gunmetal py-3 rounded-lg font-bold hover:bg-sand transition">Join Family Plan</a>
+                </div>
+
+                <!-- Law Enforcement / Military -->
+                <div class="border-4 border-navy rounded-xl p-10 hover:shadow-2xl transition">
+                    <h3 class="text-3xl font-bold text-navy mb-6">LEO / Military</h3>
+                    <p class="text-5xl font-bold text-copper mb-6">$49<span class="text-2xl text-gray-600">/mo</span></p>
+                    <ul class="text-left space-y-4 mb-8">
+                        <li>Unlimited range access</li>
+                        <li>Free qual courses</li>
+                        <li>20% off training</li>
+                        <li>Dedicated LEO lane</li>
+                    </ul>
+                    <a href="#signup" class="block bg-navy text-white py-3 rounded-lg hover:bg-gunmetal transition">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNUP / CONTACT FORM -->
+    <section id="signup" class="py-20 bg-navy text-white text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8">Start Your SRT Journey</h2>
+            <form class="space-y-6">
+                <input type="text" placeholder="Full Name" class="w-full p-4 rounded-lg text-gray-900">
+                <input type="email" placeholder="Email" class="w-full p-4 rounded-lg text-gray-900">
+                <input type="tel" placeholder="Phone" class="w-full p-4 rounded-lg text-gray-900">
+                <select class="w-full p-4 rounded-lg text-gray-900">
+                    <option>I'm interested in... </option>
+                    <option>Membership</option>
+                    <option>Classes</option>
+                    <option>Range Day Pass</option>
+                </select>
+                <button type="submit" class="w-full bg-copper text-gunmetal py-4 text-xl font-bold rounded-lg hover:bg-sand transition">
+                    Get Started
+                </button>
+            </form>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="bg-deep-grey text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <h3 class="text-xl font-bold text-navy mb-2">SRT</h3>
-            <p>© 2025 Souffrant Readiness Tactical. All rights reserved.</p>
-        </div>
+    <footer class="bg-gunmetal text-white py-12 text-center">
+        <p class="text-2xl font-bold text-copper mb-4">SRT — Souffrant Readiness Tactical</p>
+        <p>© 2025 All Rights Reserved</p>
     </footer>
 
 </body>
